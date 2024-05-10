@@ -1,0 +1,147 @@
+.loginuserimage {
+  height: 5rem;
+  width: 5rem;
+}
+
+.logoImage{
+  display: none;
+}
+
+.loginmainContainer {
+  height: 100vh;
+  display: flex;
+  width: 100%;
+}
+
+.logincontainer {
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+  width: 50%;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.logincontainer .loginform {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: flex-start;
+  /* background-color: rgb(184, 218, 215); */
+  height: 15rem;
+  width: 25rem;
+  min-width: 15rem;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.logincontainer .headinglogin {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+.logincontainer .logininput {
+  padding: 12px 20px;
+  background: #FCFCFC;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #FCFCFC inset !important;
+}
+
+.logincontainer .btnlogin {
+  margin-top: 5px;
+  align-self: flex-end;
+  background-color: transparent;
+  padding: 2px 7px;
+  width: 4rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  /* margin-right: 1rem; */
+}
+.logincontainer .EditBtn{
+  margin-top: 5px;
+  align-self: flex-end;
+  text-align: center;
+  padding: 4px 7px;
+  width: 5rem;
+  font-size: 1rem;
+}
+
+.logincontainer .btnlogin:hover {
+  background-color: var(--backColor);
+  color: white;
+}
+
+.logincontent {
+  background-color: var(--themeFontColor);
+  width: 50%;
+  color: white;
+  position: relative;
+}
+
+.logincontent .loginContentHead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.omniImage{
+  padding-top: 1rem;
+}
+.logincontent .loginContentHeading {
+  padding-top: 2rem;
+  display: flex;
+  line-height: 0.7rem;
+  flex-direction: column;
+  text-align: center;
+}
+
+.logincontent .loginContentPara {
+  padding: 2rem;
+  line-height: 1.7rem;
+  font-size: 13px;
+}
+
+.logincontent .paraContent {
+  padding: 1rem 0;
+}
+
+.logincontent .adertise {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+
+}
+
+
+@media screen and (max-width : 800px) {
+  .omniImage{
+    height: 7rem;
+  }
+}
+@media screen and (max-width : 700px) {
+  .logincontent{
+    display: none;
+  }
+  .logincontainer{
+    width: 100%;
+  }
+  .logoImage{
+    display: block;
+    height: 3rem;
+    width: 7rem;
+    margin: 1rem;
+  }
+  
+}

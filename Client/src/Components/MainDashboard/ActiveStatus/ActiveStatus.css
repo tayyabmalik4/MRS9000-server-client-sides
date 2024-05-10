@@ -1,0 +1,156 @@
+:root{
+    --font-size : 0.7rem;
+    --fontSizeStatus : 0.9rem;
+}
+/* .MainDashboardContainer{
+    background-color: black;
+} */
+
+/* .activetodaycontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: white;
+} */
+.activestatusmain{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.headeractivestatus{
+    background-color: var(--backColor);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--fontSizeStatus);
+    padding: 0.5rem;
+    /* height: 3.5rem; */
+}
+.header1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 49%;
+    padding-right: 3rem;
+}
+.header2{
+    /* padding-left: 3rem; */
+    width: 49%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.headeractivestatus .activestatuslogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} 
+.headeractivestatus .livestatuslogo{
+    padding: 0 0.5rem;
+}
+.activevalues{
+    display: flex;
+    /* justify-content: space-around; */
+    font-size: var(--font-size);
+    flex-wrap: wrap;
+}
+.graphName{
+    font-size: 0.9rem;
+}
+.activevalues .valuemain{
+    display: flex;
+    flex-direction: column;
+    padding-left:  1rem;
+}
+.activevalues .valuemain1{
+    display: flex;
+    flex-direction: column;
+    padding-left: 8rem;
+}
+.activevalues .valueName{
+    color: rgb(67, 136, 136);
+    margin: 0.4rem;
+    font-weight: bolder;
+}
+/* .activevalues .valuee{
+    margin-top: 0.4rem;
+} */
+.activevalues .val{
+    padding: 5px 15px;
+    border-radius: 3px;
+    color: white;
+    font-size: 0.9rem;
+}
+.activevalues .val1{
+    background-color: #00bcd4;
+}
+.activevalues .val2{
+    background-color: #ff9800;
+}
+.activevalues .val3{
+    background-color: gray;
+}
+.activevalues .val4{
+    background-color: red;
+}
+.deviceID{
+    font-size: 12px;
+}
+.flowtag{
+    writing-mode: vertical-lr;
+    text-orientation: sideways-right;
+}
+.chartareahori{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.datetimestatus{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 5px;
+    font-size: 12px;
+}
+.areachart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+@media screen and (max-width:900px){
+    .activetodaycontainer{
+        flex-direction: column;
+    }
+    .activestatusmain{
+        width: 100%;
+    }
+    .header1 {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .header2 {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    
+}
+@media screen and (max-width:650px) {
+    .headeractivestatus{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .activevalues .valuemain1{
+        padding-left: 1rem;
+    }
+}

@@ -1,0 +1,46 @@
+[{
+  "_id": {
+    "$oid": "65d249ab2ab8069ead66a1e8"
+  },
+  "firstName": "Tayyab",
+  "lastName": "Ashraf",
+  "email": "global",
+  "gender": "male",
+  "role": "user",
+  "phone": "03074663151",
+  "address": "Global Export Private Limited",
+  "bio": "This is the project of Global Export",
+  "password": "global",
+  "status": "approved",
+  "token": null,
+  "createdAt": {
+    "$date": "2024-02-18T18:17:15.260Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-18T18:17:15.260Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d249df2ab8069ead66a1ea"
+  },
+  "firstName": "Tayyab",
+  "lastName": "Ashraf",
+  "email": "global",
+  "gender": "male",
+  "role": "admin",
+  "phone": "03074663151",
+  "address": "Global Export Private Limited",
+  "bio": "This is the project of Global Export",
+  "password": "globalexport",
+  "status": "approved",
+  "token": null,
+  "createdAt": {
+    "$date": "2024-02-18T18:18:07.686Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-18T18:18:07.686Z"
+  },
+  "__v": 0
+}]

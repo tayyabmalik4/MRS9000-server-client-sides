@@ -1,0 +1,40 @@
+.machineHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    /* margin-top: -0.8rem; */
+}
+.machineimagelogo{
+    height: 3rem;
+    width: 5rem;
+}
+.roomName{
+    font-size: 1rem;
+}
+
+.machineheading{
+    font-size: 0.8rem;
+    color: gray;
+    /* width: 30%; */
+}
+.datetimeupdated{
+    margin-right: 2rem;
+}
+.boldmachineheading{
+    color: black;
+}
+@media screen and (max-width:750px) {
+    .machineHeader{
+        flex-wrap: wrap;
+    }
+    .datetimeupdated{
+        display: none;
+    }
+}
+.demoMain{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    /* align-self: center; */
+}

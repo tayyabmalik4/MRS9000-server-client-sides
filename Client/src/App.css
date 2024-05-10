@@ -1,0 +1,23 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap');
+
+
+.App {
+  font-family: 'Titillium Web', sans-serif;
+  /* padding: 20px; */
+  box-sizing: border-box;
+  /* font-family: 'Open Sans', sans-serif; */
+  /* min-height: calc(100vh - 40px); */
+}
+
+:root{
+  --headingSize : 1.1rem;
+  --headingWight : 600;
+  --backOpacityColor : #009688ab;
+  --backColor : #009688;
+  --fontColor : #ffeb3b;
+  --backDegree : 160deg;
+  --back1Color : #00968779;
+  --back2Color : #020202;
+  --back3Color : #00968779;
+}

@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "64708f9b692f4ab68b534786"
+  },
+  "firstName": "Humayon",
+  "lastName": "Qaiser",
+  "email": "tw",
+  "gender": "male",
+  "role": "user",
+  "phone": "03074663151",
+  "address": "Tracking World Private Limited",
+  "bio": "This is the project of Tracking World",
+  "password": "tw",
+  "status": "approved",
+  "token": null,
+  "createdAt": {
+    "$date": "2023-05-26T10:53:15.442Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T10:53:15.442Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647093905f3e562becc14b7c"
+  },
+  "firstName": "Tayyab",
+  "lastName": "Ashraf",
+  "email": "tw",
+  "gender": "male",
+  "role": "admin",
+  "phone": "03074663151",
+  "address": "Tracking World Private Limited",
+  "bio": "This is the project of Tracking World",
+  "password": "123",
+  "status": "approved",
+  "token": null,
+  "createdAt": {
+    "$date": "2023-05-26T11:10:08.986Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T11:10:08.986Z"
+  },
+  "__v": 0
+}]

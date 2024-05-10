@@ -1,0 +1,23 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem -1rem 2rem;
+}
+.btns{
+    display: flex;
+    align-items: center;
+}
+.footer .develophead{
+    font-size: 0.6rem;
+}
+.footer .develop{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 8px;
+}
+.footer .hunchlogo{
+    height: 2rem;
+    width: 4rem;
+    padding-left: 1rem;
+}

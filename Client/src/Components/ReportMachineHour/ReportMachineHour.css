@@ -1,0 +1,77 @@
+.tableheadings{
+    display: flex;
+}
+.report{
+padding: 10px 0 0 2rem;
+}
+.reportmain{
+    color: var(--themeFontColor);
+}
+.reportmain .headleft{
+    padding-left: 1rem;
+    display: flex;
+}
+.reportmaintable{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.date{
+    padding: 0.5rem 0;
+}
+.tablerow{
+    page-break-after: always;
+}
+.tablehead{
+    background-color: var(--backColor);
+    /* background-color: #3e4492; */
+    color: white;
+}
+.tableh{
+    border: 1px solid gray;
+    padding: 0 5px;
+    align-self: center;
+    text-align: center;
+    font-size: 13px;
+}
+.tablemain .tabled{
+    border: 1px solid gray;
+    padding: 0 10px;
+    align-self: center;
+    text-align: center;
+    font-size: 11px;
+}
+.btnss{
+    padding: 0 0 10px 2rem;
+    margin-top: 0.5rem;
+}
+.excelbtn{
+    margin-top: 5px;
+    align-self: flex-start;
+    background-color: transparent;
+    border: 1px solid var(--backColor);
+    padding: 2px 7px;
+    width: 4rem;
+    border-radius: 5px;
+    font-size: 0.7rem;
+}
+.excelbtn:hover{
+    background-color: var(--backColor);
+    color: white;
+}
+.pdfbtn{
+    margin-top: 5px;
+    margin-left: 1.25rem;
+    align-self: flex-start;
+    background-color: transparent;
+    border: 1px solid var(--backColor);
+    padding: 2px 7px;
+    width: 4rem;
+    border-radius: 5px;
+    font-size: 0.7rem;
+}
+.pdfbtn:hover{
+    background-color: var(--backColor);
+    color: white;
+}

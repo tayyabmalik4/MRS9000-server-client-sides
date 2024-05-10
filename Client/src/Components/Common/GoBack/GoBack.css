@@ -1,0 +1,16 @@
+.gobackbtn{
+    background-color: transparent;
+    border: 1px solid var(--backColor);
+    padding: 2px 7px;
+    border-radius: 5px;
+    width: 4rem;
+    font-size: 0.7rem;
+    /* position: absolute;
+    right: 4rem; */
+}
+.gobackbtn:hover{
+    background-color: var(--backColor);
+    border: 1px solid white;
+    color: white;
+
+}

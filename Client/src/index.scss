@@ -1,0 +1,853 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+
+  // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    // 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    // sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+// code {
+//   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+//     monospace;
+// }
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  // font-family: 'Poppins', sans-serif;
+  user-select: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--pageBackgroundColor);
+}
+
+/* ************ Css Variables ************** */
+
+:root {
+  --light: #fff;
+  --dark: #42464E;
+  --themeFontColor : #2d2c2c;
+  --themeLogoColor : #cc9900;
+  --themeDelBtn : #318e8f;
+  --themeDelHoverBtn : #51c5c7;
+  --themeColor: #FCD117;
+  --themeColorGreen: #00A859;
+  --themeColorGreenGradient: linear-gradient(96.93deg, #02C464 0%, #84F96A 100%);
+  --themeBackGreenGradient: linear-gradient(274.64deg, #02A800 5.4%, #1AD56C 94.36%);
+  --themeBackRedGradient: linear-gradient(275.12deg, #B40901 14.38%, #FB4B4D 100%);
+  --themeBackYellowGradient: linear-gradient(274.64deg, #FDBD21 5.4%, #FFD901 94.36%);
+  --themeBackGreenBoxShadow: 0px 4px 4px rgba(25, 211, 105, 0.8);
+  --themeBackRedBoxShadow: 0px 4px 4px rgba(239, 64, 64, 0.8);
+  --themeBackYellowBoxShadow: 0px 2px 4px rgba(255, 214, 3, 0.5);
+  --themeColorYellowLight: #fff5c9;
+  --themeColorDark: #282C35;
+  --themeColorDarkIcon: #A9A9A9;
+  --pageBackgroundColor: #F3F9FD;
+  --radius: 0.375rem;
+  --border: rgba(0, 0, 0, 0.3);
+  // --danger: #FF1E1E;
+  --danger: #D73A3A;
+  --dangerGradient: linear-gradient(276.38deg, #FB5F53 7.35%, #BE2F5D 71.62%);
+
+
+  --primaryColor: var(--themeColor);
+  --primaryTextColor: var(--dark);
+
+  --secondaryColor: var(--themeColorDark);
+  --secondaryIconColor: var(--themeColorDarkIcon);
+  --secondaryTextColor: var(--light);
+}
+
+/* ************ SCSS Variables ************** */
+%GreenButton {
+  max-height: 40px;
+  height: 40px;
+  width: 100%;
+  background: #00A859;
+  padding: 20px 35px;
+  color: #fff;
+  border-radius: var(--radius);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+%YellowButton {
+  max-height: 40px;
+  height: 40px;
+  width: 100%;
+  background: var(--themeColor);
+  padding: 20px 35px;
+  color: var(--light);
+  border-radius: var(--radius);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+%DashboardButton {
+  max-height: 30px;
+  height: 30px;
+  min-height: 30px;
+  width: 100%;
+  padding: 20px 35px;
+  color: var(--themeColor);
+  border-radius: 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: linear-gradient(101.19deg, #143745 2.03%, #0A1C29 100%);
+  color: var(--themeColor);
+  box-shadow: 0px 0px 15px 2px rgba(17, 49, 63, 0.3);
+
+
+  &:hover {
+    color: var(--themeColor) !important;
+    border: none;
+  }
+
+}
+
+/* ************ Custom  ScrollBar ************** */
+
+::-webkit-scrollbar {
+  // width: 5px;
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px !important;
+  background-color: transparent;
+  // box-shadow: inset 0 0 6px rgba(0, 0, 0, .3) !important;
+
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px !important;
+  background: #5c5b5b;
+}
+
+/* ************ Input placeholder ************** */
+::placeholder {
+  color: var(--border) !important;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  color: var(--border) !important;
+  /* Internet Explorer 10-11 */
+}
+
+::-ms-input-placeholder {
+  color: var(--themeFontColor) !important;
+  /* Microsoft Edge */
+}
+
+/* ************ Custom Classes ************** */
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  @media screen and (max-width:"1450px") {
+    max-width: 1050px;
+  }
+
+  @media screen and (max-width:"1100px") {
+    margin: 0 20px;
+  }
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.border {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    border-color: var(--themeColorGreen);
+  }
+}
+
+input {
+  accent-color: var(--themeColorGreen);
+}
+
+.greenButton {
+  @extend %GreenButton
+}
+
+
+
+.flexLineSpace {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // gap: 1rem;
+}
+
+.flexLine {
+  display: flex;
+  align-items: center;
+  // gap: 1rem;
+}
+
+.inputBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+
+  input {
+    width: 100%;
+  }
+}
+.icon {
+  font-size: 2.5rem;
+  color: var(--themeLogoColor);
+  font-size: 2rem;
+
+}
+
+// ProgressBox
+.progreesBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .progress {
+    color: var(--themeColor) !important;
+    height: 30px !important;
+    width: 30px !important;
+  }
+}
+
+// page headings's css
+.heading {
+  color: var(--themeFontColor);
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  // text-shadow: 1px 2px 5px rgba(81, 67, 21, 0.8);
+}
+
+// .icon {
+//   color: var(--themeFontColor)
+// }
+
+.EditBtn {
+  width: 7rem;
+  border: 1px solid var(--themeLogoColor);
+  // color: black;
+  // font-weight: bold;
+  border-radius: 5px;
+  background-color: transparent;
+  
+}
+.EditBtn:hover{
+  background-color: var(--themeLogoColor);
+  color: white;
+  border: transparent;
+  // background-color: var(--themeColor);
+}
+.DelBtn{
+  width: 7rem;
+  border: 1px solid var(--themeDelBtn);
+  background-color: transparent;
+  border-radius: 5px;
+}
+.DelBtn:hover{
+  border: transparent;
+  background-color:var(--themeDelBtn);
+}
+
+.UploadBtn{
+  margin-top: 1.5rem;
+  align-self: center;
+  font-weight: 700;
+  font-size: 15px;
+  width: 7rem;
+  border: transparent;
+  color: white;
+  font-weight: bold;
+  background-color: var(--themeLogoColor);
+  border-radius: 5px;
+}
+.UploadBtn:hover{
+  background-color: var(--themeColor);
+}
+
+
+.subHeading {
+  color: var(--primaryTextColor);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+// Buttons
+.greenBtn {
+  max-height: 40px;
+  height: 40px;
+  min-width: 20px;
+  width: 100%;
+  background: var(--themeColorGreen);
+  padding: 20px 35px;
+  color: #fff;
+  border-radius: var(--radius);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none !important;
+}
+
+.greenGradientBtn {
+  max-height: 40px;
+  height: 40px;
+  min-width: 20px;
+  width: 100%;
+  background: var(--themeBackGreenGradient);
+  box-shadow: var(--themeBackGreenBoxShadow);
+  padding: 20px 35px;
+  color: #fff;
+  border-radius: var(--radius);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none !important;
+}
+
+.redGradientBtn {
+  max-height: 40px;
+  height: 40px;
+  min-width: 20px;
+  width: 100%;
+  background: var(--themeBackRedGradient);
+  box-shadow: var(--themeBackRedBoxShadow);
+  padding: 20px 35px;
+  color: #fff;
+  border-radius: var(--radius);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none !important;
+}
+
+.yellowBtn {
+  @extend %YellowButton;
+}
+
+.yellowGraBtn {
+  @extend %YellowButton;
+  background: linear-gradient(94.04deg, #FFC01E 22.18%, #FFDB7E 100%);
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 76px;
+}
+
+.dashboardBtn {
+  @extend %DashboardButton;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.dashboardHeading {
+  height: 70px;
+  position: sticky;
+  background-color: var(--pageBackgroundColor);
+  width: 100%;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  top: -25px;
+}
+
+/* ************ ANT-Design ************** */
+// ANT-D Input
+.ant-input {
+  border-color: var(--border);
+
+  &:hover {
+    border-color: var(--themeLogoColor) !important;
+  }
+
+}
+
+.ant-input-status-error {
+  border-color: #ff4d4f !important;
+
+  &:hover {
+    border-color: #ff4d4f !important;
+  }
+}
+
+.ant-input-affix-wrapper {
+  padding: 9px 20px !important;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+
+  &:hover {
+    border-color: var(--themeLogoColor) !important;
+  }
+}
+
+.ant-input-affix-wrapper-focused {
+  // box-shadow: 0 0 0 2px rgb(5 145 255 / 10%);
+  box-shadow: none;
+}
+
+.ant-input:focus {
+  box-shadow: none;
+}
+
+// ANT-D Selector
+.ant-select-single {
+  font-size: 14px !important;
+  width: 100% !important;
+}
+
+.ant-select-selector {
+  width: 100%;
+  height: 42px;
+  padding: 5px 20px;
+  box-shadow: none;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+
+  &:hover {
+    border-color: var(--themeColor) !important;
+  }
+}
+
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  background-color: var(--lightYellow) !important;
+}
+
+// ANT-D Switch
+.ant-switch.ant-switch-checked {
+  background-color: var(--themeColor) !important;
+}
+
+// ANT-D TAGS :
+.userTags {
+  width: 85px;
+  text-align: center;
+  font-size: .65rem;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rem;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+}
+
+// ANT-D Date picker
+.ant-picker {
+  border: 1px solid var(--border) !important;
+
+  &:hover {
+    border-color: var(--themeColorGreen) !important;
+  }
+}
+
+.ant-picker-active-bar {
+  background-color: var(--themeColorGreen) !important;
+}
+
+// ANT-D popover
+.antPopover {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+
+
+  .popoverItem {
+    display: flex;
+    color: #000000;
+    gap: 0.4rem;
+    border-radius: 5px;
+    padding: 5px;
+    align-items: center;
+    cursor: pointer;
+
+    // .icon {
+    //   height: 18px;
+    //   width: 18px;
+    // }
+
+    &:hover {
+      background: rgb(221, 221, 221);
+    }
+  }
+
+  .border {
+    border-top: 1px solid rgb(139, 139, 139);
+  }
+
+}
+
+// ANT-D icons
+.anticon svg {
+  fill: var(--themeLogoColor) !important;
+  // fill: #fff !important;
+}
+
+// ANT Button
+.ant-btn-default:not(:disabled):hover {
+  color: #fff;
+  border-color: var(--themeColorGreen);
+}
+
+// ANT-D Image Viewer
+.imgViewer {
+  height: 143px;
+  width: 146px;
+  display: flex;
+  padding: .1rem;
+  border-radius: .3rem;
+  border: 1px dashed var(--themeColor);
+
+  .ant-image {
+    border-radius: .3rem;
+    overflow: hidden;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.ant-upload {
+  border-radius: 50rem !important;
+  height: 130px !important;
+  width: 130px !important;
+  border-radius: 8px;
+  padding: .1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  // border: none !important;
+
+  .imgBox {
+    width: 100%;
+    height: 100%;
+    border-radius: 50rem;
+    overflow: hidden;
+    padding: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+  }
+
+}
+
+.ant-upload:has(.imgBox) {
+  border: none !important;
+}
+
+// ANT-D table 
+.table {
+  padding-top: 1rem;
+
+  .avaterBox {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50rem;
+    overflow: hidden;
+    background-color: var(--pageBackgroundColor);
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .actionBox {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+
+    .actionBtn {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transform: scale(1);
+      transition: all .1s;
+
+      &:hover {
+        // background-color: var(--themeColor);
+        transform: scale(1.25);
+
+        // .icon {
+        //   color: #000000 !important;
+        // }
+      }
+    }
+
+    img {
+      width: 20px;
+    }
+
+    // .icon {
+    //   font-size: 20px;
+    //   // color: var(--primaryTextColor);
+    //   color: black;
+    // }
+  }
+
+
+  .ant-table-content {
+    table {
+      border-spacing: 0 .5rem;
+      background-color: var(--pageBackgroundColor);
+    }
+  }
+
+  // row hover bg color 
+  .ant-table-thead>tr {
+    border-radius: 1rem;
+    background: linear-gradient(90.28deg, #FFC01E 0%, #FFDB7E 98.36%);
+    color: var(--secondaryTextColor);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+
+    td {
+      &:first-child {
+        border-radius: 8px 0 0 8px !important;
+      }
+
+      &:last-child {
+        border-radius: 0 8px 8px 0 !important;
+      }
+    }
+
+    .ant-table-column-has-sorters {
+      .ant-table-column-sorter-inner {
+        .active {
+          color: #0A1C29;
+        }
+      }
+
+      &:hover {
+        background: none;
+      }
+
+      background: none;
+    }
+
+  }
+
+  .ant-table-thead>tr>th {
+    border: none;
+    background-color: transparent;
+    color: var(--primaryTextColor);
+
+    &::before {
+      content: none !important;
+      border-color: transparent;
+    }
+
+  }
+
+  .ant-table-column-sorters {
+    justify-content: unset;
+
+    .ant-table-column-title {
+      flex: none;
+    }
+  }
+
+  .ant-table-tbody {
+    background-color: var(--pageBackgroundColor);
+
+    tr {
+      // background-color: red;
+      border-radius: 8px;
+      box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
+
+      td {
+        background-color: white;
+
+        &:first-child {
+          border-radius: 8px 0 0 8px;
+        }
+
+        &:last-child {
+          border-radius: 0 8px 8px 0;
+        }
+      }
+    }
+  }
+
+  // search field || button
+  .custom-table .ant-input-search-button {
+    background-color: var(--themeColor) !important;
+    color: var(--themeColorGreen) !important;
+    height: 35px !important;
+  }
+
+  .custom-table .ant-input-affix-wrapper {
+    border: 1px solid var(--border) !important;
+    border-radius: 5px !important;
+    height: 35px !important;
+    padding: 0px 10px !important;
+    flex-grow: 1 !important;
+  }
+
+  .ant-input-affix-wrapper:focus,
+  .ant-input-affix-wrapper-focused {
+    box-shadow: 0 0 0 2px #0064001f;
+  }
+
+  // row hover bg color 
+  .ant-table-cell-row-hover {
+    cursor: pointer;
+    background-color: #EDEDED !important;
+    // background-color: var(--primaryColor) !important;
+    color: #101010;
+
+    .actionBtn {
+      .icon {
+        color: var(--primaryTextColor);
+      }
+    }
+  }
+
+
+
+  // pagination button 
+  .ant-pagination .ant-pagination-item-active a {
+    color: var(--primaryTextColor);
+
+  }
+
+  .ant-pagination-item-active {
+    border-color: var(--primaryColor);
+
+    &:hover {
+      border-color: var(--primaryColor);
+    }
+  }
+
+  // .ant-table-wrapper .ant-table-column-sorter-up.active,
+  // .ant-table-wrapper .ant-table-column-sorter-down.active {
+  //   // color: var(--themeColorGreen) !important;
+  // }
+
+  td.ant-table-column-sort {
+    background-color: unset;
+  }
+
+  .noRole {
+    // background-color: #D72222;
+    // background-color: var(--danger) !important;
+    color: var(--danger);
+
+    &:hover {
+      color: white;
+
+      .icon {
+        color: var(--primaryTextColor);
+      }
+    }
+
+
+    .ant-table-cell-row-hover {
+      background-color: #D73A3A !important;
+      color: white;
+      // background-color: #df3030 !important;
+    }
+  }
+}
+
+// ANT-D Modals :
+.ant-modal {
+
+  .deleteModel {
+    display: flex;
+
+    .titleBox {
+      display: flex;
+      gap: .5rem;
+      align-items: center;
+      font-size: 1rem;
+
+      .icon {
+        color: red;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .ant-modal-footer {
+    display: flex;
+    justify-content: end;
+
+    .ant-btn {
+      background: var(--themeBackGreenGradient);
+      box-shadow: var(--themeBackGreenBoxShadow);
+      width: 100px;
+      font-size: small;
+      color: white;
+
+      &:nth-child(2) {
+        background: var(--themeBackRedGradient);
+        box-shadow: var(--themeBackRedBoxShadow);
+        border: none;
+      }
+    }
+  }
+}

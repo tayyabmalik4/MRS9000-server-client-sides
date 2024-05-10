@@ -1,0 +1,47 @@
+@import "rsuite/dist/rsuite.css";
+.LastMonthStatus{
+    margin-top: 1rem;
+}
+.datepiker {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+.MainDashboardContainer .headleft{
+    display: flex;
+    /* gap: 1rem; */
+    padding-top: 0.5rem;
+    align-items: center;    
+}
+.MainDashboardContainer .headleft .icon{
+    font-size: 2rem;
+}
+.MainDashboardContainer .headleft .heading{
+    font-size: 1.2rem;
+}
+
+
+.MainDashboardContainer .rangepiker {
+    width: 14rem;
+}
+.MainDashboardContainer .btnreport {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    /* border: 1px solid #3e4492; */
+    padding: 2px 10px;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    width: 4rem;
+    margin: 0.3rem 0rem;
+    font-size: 0.7rem;
+    margin-left: 2rem;
+
+}
+
+.MainDashboardContainer .btnreport:hover {
+    border: 1px solid white;
+    color: var(--backColor);
+    background-color: white;
+}

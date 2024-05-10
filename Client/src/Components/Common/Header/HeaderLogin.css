@@ -1,0 +1,39 @@
+.machineHeaderLogin{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    /* margin-top: -0.8rem; */
+}
+.machineimagelogoLogin{
+    height: 3rem;
+    width: 7rem;
+}
+.roomNameLogin{
+    font-size: 1rem;
+}
+.adminName{
+    font-weight: 600;
+    color: var(--themeLogoColor);
+    text-transform: uppercase;
+}
+
+.machineheadingLogin{
+    font-size: 0.8rem;
+    color: var(--themeFontColor);
+    /* color: gray; */
+    /* width: 30%; */
+}
+.datetimeupdatedLogin{
+    margin-right: 2rem;
+}
+.headerright{
+    display: flex;
+}
+@media screen and (max-width:750px) {
+    .machineHeaderLogin{
+        flex-wrap: wrap;
+    }
+    .datetimeupdatedLogin{
+        display: none;
+    }
+}

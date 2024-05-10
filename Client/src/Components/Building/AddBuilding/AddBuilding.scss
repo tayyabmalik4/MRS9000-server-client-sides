@@ -1,0 +1,99 @@
+.AddBuildingFormContainer {
+
+    .headingAddBuilding {
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+
+    .AddBuildingBodyArea {
+        background: #FFFFFF;
+        border-radius: 13px;
+        padding: 2rem;
+        margin-top: 2rem;
+
+        .InputFields {
+            display: flex;
+            flex-direction: column;
+
+            .Inputfield {
+                margin: 1.5rem 0;
+                display: flex;
+                justify-content: space-between;
+                gap: 1.5rem;
+
+                .field {
+                    width: 100%;
+                    position: relative;
+                    color: #838AA3;
+                    gap: 1rem;
+                }
+
+
+                .registerSelector {
+                    .ant-select-selector {
+                        height: 71px;
+                        padding: 12px 30px;
+                        padding-top: 15px;
+                        background: #FFFFFF;
+                        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+                        border-radius: 9px;
+                    }
+                }
+
+                .buildingInput {
+                    width: 100%;
+                    min-width: 10rem;
+                    height: 71px;
+                    padding: 12px 30px;
+                    background: white;
+                    border: 1px solid #F3F3F3;
+                    background: #FFFFFF;
+                    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+                    border-radius: 9px;
+
+                    input {
+                        background-color: inherit;
+
+                    }
+
+                    &:hover {
+                        border-color: var(--themeColorGreen);
+                    }
+                }
+            }
+
+            .descriptionHeader {
+                font-weight: 500;
+                font-size: 15px;
+                padding: 1rem 0;
+
+            }
+
+            .descriptionPara {
+                background: #FFFFFF;
+                box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+                padding: 2rem;
+                text-align: center;
+                font-size: 15px;
+
+            }
+            .TextAreaAddBuilding {
+                font-size: 16px;
+                border: transparent;
+            }
+
+            .uploadAddBuildingBtn {
+                margin-top: 1.5rem;
+                padding: 2rem;
+                align-self: center;
+                width: 12rem;
+                font-weight: 700;
+                font-size: 15px;
+
+            }
+        }
+    }
+}
