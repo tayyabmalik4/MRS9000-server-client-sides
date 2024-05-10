@@ -2,8 +2,8 @@ import axios from "axios";
 
 let SERVER = window.location.origin
 const Instance = axios.create({
-    baseURL: "http://localhost:4000/api"
-    // baseURL: `${SERVER}/api`
+    // baseURL: "http://localhost:4000/api"
+    baseURL: `${SERVER}/api`
 })
 
 // window.location.CustomURL = `${baseURL}/static`
