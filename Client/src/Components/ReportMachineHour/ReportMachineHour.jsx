@@ -98,7 +98,7 @@ const ReportMachine = () => {
                       <tr className="tablerow">
                         {/* <th className="tableh">Time | Date</th> */}
                         {data?.HourReadings?.[data?.HourReadings?.length - 1]
-                          ?.flow && (
+                          ?.total && (
                           <th className="tableh">
                             Flow{" "}
                             {data?.meterReadings?.flow &&
@@ -150,7 +150,7 @@ const ReportMachine = () => {
                                   {ddd?.time} | {ddd?.date}
                                 </td>
                               )}
-                              {ddd?.flow && (
+                              {ddd?.total && (
                                 <td className="tabled">
                                   {parseInt(difference).toLocaleString()}
                                   {/* {parseInt(
