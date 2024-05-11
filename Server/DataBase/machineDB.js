@@ -3,8 +3,8 @@ const moment = require("moment");
 const device = require("../model/deviceModel.js");
 
 const deviceDB = () => {
-  // const client = mqtt.connect('mqtt://amazonusa.link:1883');
-  const client = mqtt.connect("mqtt://localhost:1883");
+  const client = mqtt.connect('mqtt://amazonusa.link:1883');
+  // const client = mqtt.connect("mqtt://localhost:1883");
   client.on("connect", () => {
     if (client.connected) {
       console.log("MQTT protocol is connected successfully");
